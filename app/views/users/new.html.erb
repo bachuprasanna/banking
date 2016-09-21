@@ -1,0 +1,27 @@
+<%= form_for :user, url: users_path do |f| %>
+  <div style="text-align:center"><p>
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </p>
+ 
+  <p>
+    <%= f.label :accountnumber %><br>
+    <%= f.text_field :accountnumber %>
+  </p>
+  <p>
+    <%= f.label :date_issued %><br>
+    <%= f.text_field :date_issued %>
+  </p>
+  <p>
+    <%= f.label :balance %><br>
+    <%= f.text_field :balance %>
+  </p>
+   <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<%= form_for :user, url: users_path do |f| %>
+  ...
+<% end %>
+ 
+<%= link_to 'Back', users_path %></div>

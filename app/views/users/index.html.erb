@@ -1,0 +1,20 @@
+<h1 style="text-align:center">Account details</h1>
+ <%= link_to 'New account', new_user_path %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>accountnumber</th>
+	<th>date_issued</th>
+	<th>balance</th>
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.Name %></td>
+          <td><%= user.accountnumber %></td>
+	        <td><%= user.date_issued %></td>
+			 <td><%= user.balance %></td>
+      <td><%= link_to 'Show', users_path(user) %></td>
+    </tr>
+  <% end %>
+</table>

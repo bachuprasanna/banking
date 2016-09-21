@@ -1,0 +1,22 @@
+<h1 style="text-align:center">Transaction details</h1>
+ <%= link_to 'New Transaction', new_transaction_path %>
+<table>
+  <tr>
+    <tv>accountnumber</tv>
+    <tv>date_dedection</tv>
+	<tv>discription</tv>
+	<tv>deducted_amount</tv>
+	<tv>balance</tv>
+  </tr>
+ 
+  <% @transactions.each do |transaction| %>
+    <tr>
+      <td><%= transaction.accountnumber %></td>
+          <td><%= transaction.date_dedection %></td>
+	        <td><%= transaction.discription %></td>
+			 <td><%= transaction.deducted_amount %></td>
+			  <td><%= transaction.balance %></td>
+      <td><%= link_to 'Show', transactions_path(transaction) %></td>
+    </tr>
+  <% end %>
+</table>

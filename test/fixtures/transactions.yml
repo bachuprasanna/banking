@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accountnumber: 1
+  date_dedection: 2016-09-21
+  discrition: MyText
+  deducted_amount: 1.5
+  balance: 1.5
+
+two:
+  accountnumber: 1
+  date_dedection: 2016-09-21
+  discrition: MyText
+  deducted_amount: 1.5
+  balance: 1.5

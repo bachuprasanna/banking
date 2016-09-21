@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  accountnumber: 1
+  date_issued: 2016-09-21
+
+two:
+  Name: MyString
+  accountnumber: 1
+  date_issued: 2016-09-21
